@@ -15,6 +15,7 @@ wp_localize_script('tsml_public', 'tsml_map', array(
 	'contributions_api_key' => $meeting->contributions_api_key,
 ));
 
+date_default_timezone_set('America/Los_Angeles'); 
 $startDate = tsml_format_next_start($meeting);
 
 get_header();
